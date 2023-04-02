@@ -1,0 +1,65 @@
+Codigo mejorado: 
+
+public class EjemploArrays {
+    
+    public static void main(String[] args) {
+        
+        int[] numeros = {10, 20, 40, 56, 15, 12, 1, 110, 120, 130};
+        
+        imprimirArray(numeros);
+        
+        System.out.println("Los numeros del segundo vector son:");
+        
+        final int[] VECTOR_2 = {1, 2, 3, 4, 5, 21, 35, 78};
+        
+        imprimirArray(VECTOR_2);
+    }
+    
+    public static void imprimirArray(int[] array) {
+        for (int num : array) {
+            System.out.print(num + " ");
+        }
+        System.out.println();
+    }
+}
+
+///////////////////////////////////////////////////////////////////////////////////////////////////////
+Codigo de strings: 
+
+	public static void main(String[] args) {
+
+// TODO Auto-generated method stub
+
+String palabra="danonino tomo con mi boca";
+
+int contador=0,posicion=0;
+
+char caracter = 'n';
+
+String palabra_minu = palabra.toLowerCase();
+
+posicion = palabra_minu.indexOf(caracter);
+
+System.out.println(posicion);
+
+if (posicion != -1 ) {
+
+while (posicion != -1 ) {
+
+contador++;
+
+posicion = palabra_minu.indexOf(caracter,posicion+1);
+
+}
+
+System.out.println("La cantidad de coincidencias es: " + contador);
+
+}else {
+
+System.out.println("No hay coincidencia");
+
+}
+
+}
+
+}
